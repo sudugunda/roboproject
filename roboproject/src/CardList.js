@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from './Card'
 
 export default function CardList({persons}) {
+
     return (
         <div className='w-80'>
             {persons.map(({id, name, email}) => {
